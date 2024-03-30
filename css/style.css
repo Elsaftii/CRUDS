@@ -1,0 +1,39 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../imgs/No-inventory-blog.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.532);
+}
+
+.table {
+    --bs-table-bg: rgba(255, 255, 255, 0.503);
+}
+
+::placeholder {
+    color: #fff;
+}
+
+#updateBtn, #addBtn {
+    background-color: rgb(255, 252, 252);
+    color: black;
+    font-size: 18px;
+}
+
+.update-btn {
+    background-color: #3e5d6b;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #995252;
+    color: white;
+}
+
+button:disabled {
+    background-color: #716c6c82;
+
+}

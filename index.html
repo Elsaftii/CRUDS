@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CRUDS</title>
+</head>
+
+<body>
+    <div class="w-75 mx-auto ">
+        <h1 class=" py-4 text-capitalize text-white">store managment</h1>
+        <label for="productName" class="text-capitalize text-white">product name</label>
+        <input type="text" name="" id="productName" class="form-control mb-3" placeholder='ex.Samsung, Oppo y3'>
+
+        <label for="productPrice" class="text-capitalize text-white">product price</label>
+        <input type="number" name="" id="productPrice" class="form-control mb-3"
+            placeholder='Our Prices start from 1000'>
+
+        <label for="productCategory" class="text-capitalize text-white">product category</label>
+        <input type="text" name="" id="productCategory" class="form-control mb-3">
+
+        <label for="productDesc" class="text-capitalize text-white">product Description</label>
+        <textarea type="text" name="" id="productDesc" class="form-control mb-3"></textarea>
+        <button class="btn text-capitalize" id="addBtn"> add product</button>
+        <button class=" d-none text-capitalize rounded-1 border-0 py-2 px-3 " id="updateBtn">save updates</button>
+
+    </div>
+    <div class="w-75 mx-auto p-5">
+        <input type="text" id="searchInput" class="form-control p-3 " placeholder="Search By Name" />
+    </div>
+    <div id="undo" class="  text-center">
+    </div>
+
+    <table class="table w-75 mx-auto text-center">
+        <thead>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <button id="undoBtn"
+        class=" btn btn-warning px-3 py-2 rounded-pill position-fixed bottom-50 end-0 d-none text-center  "> Undo
+        Delete</button>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
